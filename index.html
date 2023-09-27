@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pagina principal</title>
+</head>
+<body>
+    <h1>Pagina principal</h1>
+
+    <!-- Adicione um link âncora para abrir o menu ou fechá-lo -->
+    <a href="#menu" id="daora-btn">Abrir Menu</a>
+
+    <!-- Div do menu com o ID correspondente ao link âncora -->
+    <div class="menu" id="menu">
+        <nav>
+            <a href="senhas.html">Gerador de Senhas</a>
+            <a href="#teste.html">comandos</a>
+            <a href="#sobre">sobre</a>
+            <a href="#contato">contato</a>
+            <a href="#links">links</a>
+        </nav>
+    </div>
+
+    <script>
+        // Função para alternar a exibição do menu quando o botão for clicado
+        document.addEventListener('DOMContentLoaded', function () {
+            var menu = document.getElementById('menu');
+            var daoraBtn = document.getElementById('daora-btn');
+
+            daoraBtn.addEventListener('click', function (event) {
+                event.preventDefault(); // Evita a rolagem da página ao clicar no link
+                if (menu.style.display === 'block') {
+                    menu.style.display = 'none';
+                    daoraBtn.textContent = 'Abrir Menu';
+                } else {
+                    menu.style.display = 'block';
+                    daoraBtn.textContent = 'Fechar Menu';
+                }
+            });
+
+            // Feche o menu ao clicar em qualquer link dentro dele
+            var links = menu.getElementsByTagName('a');
+            for (var i = 0; i < links.length; i++) {
+                links[i].addEventListener('click', function () {
+                    menu.style.display = 'none';
+                    daoraBtn.textContent = 'Abrir Menu';
+                });
+            }
+        });
+    </script>
+</body>
+</html>
