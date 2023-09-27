@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="senhas.css">
+    <title>Gerador de Senhas</title>
+   
+</head>
+<body>
+    <h1>Gerador de Senhas</h1>
+    <div id="passwords"></div>
+    <button id="generate-btn">Gerar Senhas</button>
+
+    <script>
+        // Função para gerar uma senha aleatória
+        function generatePassword() {
+            const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%¨&*()_+=/;:";
+            let password = '';
+            const passwordLength = 8;
+
+            for (let i = 0; i < passwordLength; i++) {
+                const randomIndex = Math.floor(Math.random() * characters.length);
+                password += characters.charAt(randomIndex);
+            }
+
+            return password;
+        }
+
+        // Função para gerar várias senhas
+        function generatePasswords(count) {
+            const passwords = [];
+            for (let i = 0; i < count; i++) {
+                passwords.push(generatePassword());
+            }
+            return passwords;
+        }
+
+        // Atualiza o campo de senhas quando o botão é clicado
+        document.getElementById('generate-btn').addEventListener('click', function() {
+            const passwordsField = document.getElementById('passwords');
+            const passwordCount = 100; // Defina o número de senhas que você deseja gerar (mais de 100 neste caso)
+            const passwords = generatePasswords(passwordCount);
+            passwordsField.textContent = passwords.join('\n');
+        });
+    </script>
+</body>
+</html>
