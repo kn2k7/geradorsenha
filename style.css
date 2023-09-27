@@ -1,0 +1,455 @@
+@media screen and (min-width: 1200px) {
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: #000000; /* Cor de fundo */
+}
+
+/* Estilo do botão "abrir menu" */
+#daora-btn {
+    background-color: #007bff;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    position: absolute; /* Adicionando essa linha */
+    top: 10px; /* Ajuste a posição vertical conforme necessário */
+    left: 10px; /* Ajuste a posição horizontal conforme necessário */
+    overflow: hidden;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 10px; /* Borda redonda de 10px */
+}
+
+/* Estilo do botão "abrir menu" no hover */
+#daora-btn:hover {
+    background-color: #b30000;
+    animation: neon-glow 1s infinite alternate;
+    border-radius: 10px; /* Borda redonda de 10px */
+}
+
+/* Estilo inicial da div de menu */
+.menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0; /* Adicionando essa linha */
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+/* Estilo da div de menu quando é alvo (:target) */
+.menu:target {
+    display: block; /* Quando a âncora é o alvo, o menu é exibido */
+}
+
+/* Estilo dos links dentro do menu */
+.menu a {
+    background-color: #007bff;
+    color: white;
+    padding: 10px ;
+    border: none;
+    cursor: pointer;
+    position: 
+    overflow: hidden;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    display: block;
+    margin: 7px;
+    border-radius: 10px; /* Borda redonda de 10px */
+}
+
+/* Estilo dos links dentro do menu no hover */
+.menu a:hover {
+    background-color: #b30000;
+    animation: neon-glow 1s infinite alternate;
+}
+
+/* Animação de brilho neon */
+@keyframes neon-glow {
+    0% {
+        box-shadow: 0 0 10px 0 rgba(0, 255, 255, 0.8),
+                    0 0 20px 0 rgba(0, 255, 255, 0.6),
+                    0 0 30px 0 rgba(0, 255, 255, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 20px 0 rgba(0, 255, 255, 0.8),
+                    0 0 30px 0 rgba(0, 255, 255, 0.6),
+                    0 0 40px 0 rgba(0, 255, 255, 0.4);
+    }
+}
+
+}
+
+
+
+@media screen and (min-width: 765px) {
+
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        background-color: #000000; /* Cor de fundo */
+    }
+    
+    /* Estilo do botão "abrir menu" */
+    #daora-btn {
+        background-color: #007bff;
+        color: rgb(255, 255, 255);
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        position: absolute; /* Adicionando essa linha */
+        top: 10px; /* Ajuste a posição vertical conforme necessário */
+        left: 10px; /* Ajuste a posição horizontal conforme necessário */
+        overflow: hidden;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+        margin: 5px;
+        border-radius: 10px; /* Borda redonda de 10px */
+    }
+    
+    /* Estilo do botão "abrir menu" no hover */
+    #daora-btn:hover {
+        background-color: #b30000;
+        animation: neon-glow 1s infinite alternate;
+        border-radius: 10px; /* Borda redonda de 10px */
+    }
+    
+    /* Estilo inicial da div de menu */
+    .menu {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0; /* Adicionando essa linha */
+        background-color: transparent;
+        padding: 10px;
+        border-radius: 10px;
+    
+    }
+    
+    /* Estilo da div de menu quando é alvo (:target) */
+    .menu:target {
+        display: block; /* Quando a âncora é o alvo, o menu é exibido */
+    }
+    
+    /* Estilo dos links dentro do menu */
+    .menu a {
+        background-color: #007bff;
+        color: white;
+        padding: 10px ;
+        border: none;
+        cursor: pointer;
+        position: 
+        overflow: hidden;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        text-decoration: none;
+        display: block;
+        margin: 7px;
+        border-radius: 10px; /* Borda redonda de 10px */
+    }
+    
+    /* Estilo dos links dentro do menu no hover */
+    .menu a:hover {
+        background-color: #b30000;
+        animation: neon-glow 1s infinite alternate;
+    }
+    
+    /* Animação de brilho neon */
+    @keyframes neon-glow {
+        0% {
+            box-shadow: 0 0 10px 0 rgba(0, 255, 255, 0.8),
+                        0 0 20px 0 rgba(0, 255, 255, 0.6),
+                        0 0 30px 0 rgba(0, 255, 255, 0.4);
+        }
+        100% {
+            box-shadow: 0 0 20px 0 rgba(0, 255, 255, 0.8),
+                        0 0 30px 0 rgba(0, 255, 255, 0.6),
+                        0 0 40px 0 rgba(0, 255, 255, 0.4);
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 360px)  {
+
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        background-color: #ececec; /* Cor de fundo */
+    }
+    
+    /* Estilo do botão "abrir menu" */
+    #daora-btn {
+        background-color: #000000;
+        color: rgb(251, 251, 251);
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        top: 10px; /* Ajuste a posição vertical conforme necessário */
+        left: 10px; /* Ajuste a posição horizontal conforme necessário */
+        overflow: hidden;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+        margin: 5px;
+        border-radius: 10px; /* Borda redonda de 10px */
+    }
+    
+    /* Estilo do botão "abrir menu" no hover */
+    #daora-btn:hover {
+        background-color: #3f2c2c;
+        animation: neon-glow 1s infinite alternate;
+        border-radius: 10px; /* Borda redonda de 10px */
+    }
+    
+    /* Estilo inicial da div de menu */
+    .menu {
+        display: none;
+        top: 50px;
+        left: 0; /* Adicionando essa linha */
+        background-color: transparent;
+        padding: 10px;
+        border-radius: 10px;
+    
+    }
+    
+    /* Estilo da div de menu quando é alvo (:target) */
+    .menu:target {
+        display: block; /* Quando a âncora é o alvo, o menu é exibido */
+    }
+    
+    /* Estilo dos links dentro do menu */
+    .menu a {
+        background-color: #020203;
+        color: rgb(255, 255, 255);
+        padding: 10px ;
+        border: none;
+        cursor: pointer;
+        position: 
+        overflow: hidden;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        text-decoration: none;
+        display: block;
+        margin: 7px;
+        border-radius: 10px; /* Borda redonda de 10px */
+    }
+    
+    /* Estilo dos links dentro do menu no hover */
+    .menu a:hover {
+        background-color: #3b2c2c;
+        animation: neon-glow 1s infinite alternate;
+    }
+    
+    /* Animação de brilho neon */
+    @keyframes neon-glow {
+        0% {
+            box-shadow: 0 0 10px 0 rgba(0, 255, 255, 0.8),
+                        0 0 20px 0 rgba(0, 255, 255, 0.6),
+                        0 0 30px 0 rgba(0, 255, 255, 0.4);
+        }
+        100% {
+            box-shadow: 0 0 20px 0 rgba(0, 255, 255, 0.8),
+                        0 0 30px 0 rgba(0, 255, 255, 0.6),
+                        0 0 40px 0 rgba(0, 255, 255, 0.4);
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 765px) {
+
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        background-color: #000000; /* Cor de fundo */
+    }
+    
+    /* Estilo do botão "abrir menu" */
+    #daora-btn {
+        background-color: #007bff;
+        color: rgb(255, 255, 255);
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        position: absolute; /* Adicionando essa linha */
+        top: 10px; /* Ajuste a posição vertical conforme necessário */
+        left: 10px; /* Ajuste a posição horizontal conforme necessário */
+        overflow: hidden;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+        margin: 5px;
+        border-radius: 10px; /* Borda redonda de 10px */
+    }
+    
+    /* Estilo do botão "abrir menu" no hover */
+    #daora-btn:hover {
+        background-color: #b30000;
+        animation: neon-glow 1s infinite alternate;
+        border-radius: 10px; /* Borda redonda de 10px */
+    }
+    
+    /* Estilo inicial da div de menu */
+    .menu {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0; /* Adicionando essa linha */
+        background-color: transparent;
+        padding: 10px;
+        border-radius: 10px;
+    
+    }
+    
+    /* Estilo da div de menu quando é alvo (:target) */
+    .menu:target {
+        display: block; /* Quando a âncora é o alvo, o menu é exibido */
+    }
+    
+    /* Estilo dos links dentro do menu */
+    .menu a {
+        background-color: #28313a;
+        color: white;
+        padding: 10px ;
+        border: none;
+        cursor: pointer;
+        position: 
+        overflow: hidden;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        text-decoration: none;
+        display: block;
+        margin: 7px;
+        border-radius: 10px; /* Borda redonda de 10px */
+    }
+    
+    /* Estilo dos links dentro do menu no hover */
+    .menu a:hover {
+        background-color: #b30000;
+        animation: neon-glow 1s infinite alternate;
+    }
+    
+    /* Animação de brilho neon */
+    @keyframes neon-glow {
+        0% {
+            box-shadow: 0 0 10px 0 rgba(0, 255, 255, 0.8),
+                        0 0 20px 0 rgba(0, 255, 255, 0.6),
+                        0 0 30px 0 rgba(0, 255, 255, 0.4);
+        }
+        100% {
+            box-shadow: 0 0 20px 0 rgba(0, 255, 255, 0.8),
+                        0 0 30px 0 rgba(0, 255, 255, 0.6),
+                        0 0 40px 0 rgba(0, 255, 255, 0.4);
+        }
+    }
+
+}
+
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+
+
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        background-color: #000000; /* Cor de fundo */
+    }
+    
+    /* Estilo do botão "abrir menu" */
+    #daora-btn {
+        background-color: #007bff;
+        color: rgb(255, 255, 255);
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        position: absolute; /* Adicionando essa linha */
+        top: 10px; /* Ajuste a posição vertical conforme necessário */
+        left: 10px; /* Ajuste a posição horizontal conforme necessário */
+        overflow: hidden;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+        margin: 5px;
+        border-radius: 10px; /* Borda redonda de 10px */
+    }
+    
+    /* Estilo do botão "abrir menu" no hover */
+    #daora-btn:hover {
+        background-color: #b30000;
+        animation: neon-glow 1s infinite alternate;
+        border-radius: 10px; /* Borda redonda de 10px */
+    }
+    
+    /* Estilo inicial da div de menu */
+    .menu {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0; /* Adicionando essa linha */
+        background-color: transparent;
+        padding: 10px;
+        border-radius: 10px;
+    
+    }
+    
+    /* Estilo da div de menu quando é alvo (:target) */
+    .menu:target {
+        display: block; /* Quando a âncora é o alvo, o menu é exibido */
+    }
+    
+    /* Estilo dos links dentro do menu */
+    .menu a {
+        background-color: #007bff;
+        color: rgb(0, 0, 0);
+        padding: 10px ;
+        border: none;
+        cursor: pointer;
+        position: 
+        overflow: hidden;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        text-decoration: none;
+        display: block;
+        margin: 7px;
+        border-radius: 10px; /* Borda redonda de 10px */
+    }
+    
+    /* Estilo dos links dentro do menu no hover */
+    .menu a:hover {
+        background-color: #b30000;
+        animation: neon-glow 1s infinite alternate;
+    }
+    
+    /* Animação de brilho neon */
+    @keyframes neon-glow {
+        0% {
+            box-shadow: 0 0 10px 0 rgba(0, 255, 255, 0.8),
+                        0 0 20px 0 rgba(0, 255, 255, 0.6),
+                        0 0 30px 0 rgba(0, 255, 255, 0.4);
+        }
+        100% {
+            box-shadow: 0 0 20px 0 rgba(0, 255, 255, 0.8),
+                        0 0 30px 0 rgba(0, 255, 255, 0.6),
+                        0 0 40px 0 rgba(0, 255, 255, 0.4);
+        }
+    }
+    
+    }
+
+  
