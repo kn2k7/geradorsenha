@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3F4C3</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            padding-top: 10%;
+            position: relative;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1.25rem;
+        }
+
+        .blinking-text {
+            animation: blink 1s linear infinite;
+            color: red;
+        }
+
+        @keyframes blink {
+            0%,
+            50% {
+                opacity: 1;
+            }
+            51%,
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .animated-text {
+            animation: fadeInOut 3s linear infinite;
+            color: green;
+        }
+
+        @keyframes fadeInOut {
+            0%,
+            100% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        pre {
+        display: inline-block;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        top: 5%; /* Ajuste o valor 'top' para posicionar o texto mais perto do topo da página */
+        transform: translate(-50%, 0);
+        }
+
+        .falling-money {
+            font-size: 2rem;
+            position: absolute;
+            animation: fall linear infinite;
+            color: green;
+        }
+
+        @keyframes fall {
+            0% {
+                top: -50px;
+                opacity: 0;
+            }
+            5% {
+                opacity: 1;
+            }
+            100% {
+                top: 100%;
+                opacity: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <pre class="blinking-text">
+        _______   __    __   ______   __    __  ________  ________  ________   ______  ________   ______   __    __  ________ 
+        |       \ |  \  |  \ /      \ |  \  /  \|        \|        \|        \ /      \|        \ /      \ |  \  |  \|        \
+        | $$$$$$$\| $$  | $$|  $$$$$$\| $$ /  $$| $$$$$$$$ \$$$$$$$$ \$$$$$$$$|  $$$$$$\\$$$$$$$$|  $$$$$$\| $$\ | $$| $$$$$$$$
+        | $$  | $$| $$  | $$| $$   \$$| $$/  $$ | $$__       | $$      | $$   | $$___\$$  | $$   | $$  | $$| $$$\| $$| $$__    
+        | $$  | $$| $$  | $$| $$      | $$  $$  | $$  \      | $$      | $$    \$$    \   | $$   | $$  | $$| $$$$\ $$| $$  \   
+        | $$  | $$| $$  | $$| $$   __ | $$$$$\  | $$$$$      | $$      | $$    _\$$$$$$\  | $$   | $$  | $$| $$\$$ $$| $$$$$   
+        | $$__/ $$| $$__/ $$| $$__/  \| $$ \$$\ | $$_____    | $$      | $$   |  \__| $$  | $$   | $$__/ $$| $$ \$$$$| $$_____ 
+        | $$    $$ \$$    $$ \$$    $$| $$  \$$\| $$     \   | $$      | $$    \$$    $$  | $$    \$$    $$| $$  \$$$| $$     \
+         \$$$$$$$   \$$$$$$   \$$$$$$  \$$   \$$ \$$$$$$$$    \$$       \$$     \$$$$$$    \$$     \$$$$$$  \$$   \$$ \$$$$$$$$
+                                                                                                                               
+                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+    </pre><br><br><br>
+    <center>
+        <img src="https://steamuserimages-a.akamaihd.net/ugc/244710630325715238/DBF2154CE721814E9B0F8C6B14D1578A92A3F7B1/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false">
+        <marquee><p class="blinking-text">Você está sendo monitorado!</p></marquee>
+        <p class="animated-text">Nas sombras, olhos invisíveis nos observam, alimentando-se de nossos medos</p>
+    </center>
+    <script>
+        function createFallingMoney() {
+    const money = document.createElement('span');
+    money.classList.add('falling-money');
+
+    // Adicione os caracteres desejados no array
+    const characters = ['$', '0', '1'];
+    // Escolha um caractere aleatório do array
+    const randomCharacter = characters[Math.floor(Math.random() * characters.length)];
+    money.textContent = randomCharacter;
+
+    const randomX = Math.floor(Math.random() * window.innerWidth);
+    const randomDuration = 3 + Math.random() * 5;
+
+    money.style.left = `${randomX}px`;
+    money.style.animationDuration = `${randomDuration}s`;
+
+    document.body.appendChild(money);
+
+    setTimeout(() => {
+        document.body.removeChild(money);
+    }, randomDuration * 1000);
+}
+setInterval(createFallingMoney, 200);
+    </script>
+</body>
+</html>
